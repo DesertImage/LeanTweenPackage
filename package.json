@@ -1,11 +1,10 @@
   {
-    "name": "com.desertimage.leantweenpackage",
+    "name": "com.desertimage.lean-tween",
     "version": "0.2.1",
     "displayName": "LeanTween package",
     "description": "",
     "unity": "2020.3",
     "keywords": [],
     "dependencies": {
-        "com.unity.textmeshpro" : "3.0.6"
   }
 }
