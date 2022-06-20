@@ -240,5 +240,41 @@ namespace Extensions
                 time
             ).setEaseOutExpo();
         }
+        
+        public static void SetAlpha(this SpriteRenderer sprite, float alpha, float time)
+        {
+            LeanTween.cancel(sprite.gameObject);
+
+            LeanTween.value(
+                sprite.gameObject,
+                value =>
+                {
+                    var color = sprite.color;
+                    color.a = value;
+                    sprite.color = color;
+                },
+                sprite.color.a,
+                alpha,
+                time
+            );
+        }
+
+        public static void SetAlpha(this SpriteRenderer sprite, float fromAlpha, float alpha, float time = .3f)
+        {
+            LeanTween.cancel(sprite.gameObject);
+
+            LeanTween.value(
+                sprite.gameObject,
+                value =>
+                {
+                    var color = sprite.color;
+                    color.a = value;
+                    sprite.color = color;
+                },
+                fromAlpha,
+                alpha,
+                time
+            );
+        }
     }
 }
