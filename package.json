@@ -1,13 +1,11 @@
   {
-    "name": "com.desertimage.ecs",
+    "name": "com.desertimage.leantweenpackage",
     "version": "0.2.1",
-    "displayName": "ECS",
+    "displayName": "LeanTween package",
     "description": "",
     "unity": "2020.3",
     "keywords": [],
     "dependencies": {
-        "git@github.com:DesertImage/LeanTweenPackage.git",
-        "git@github.com:DesertImage/Events.git",
         "com.unity.textmeshpro" : "3.0.6"
   }
 }
